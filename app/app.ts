@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 import {Platform, ionicBootstrap, MenuController} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HomePage} from './pages/home/home';
-
+import {CameraTestPage} from './pages/camera-test/camera-test';
 
 @Component({
   templateUrl: 'build/app.html'
@@ -15,7 +15,8 @@ export class MyApp {
   constructor(platform: Platform, public menu: MenuController) {
 
     this.pages = [
-      {title: 'Home', component: HomePage}
+      {title: 'Home', component: HomePage},
+      {title: 'Camera', component: CameraTestPage},
     ];
 
     platform.ready().then(() => {
